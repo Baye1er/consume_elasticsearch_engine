@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+</head>
+<body>
+<div id="main-page">
+    {% for item in items %}
+    <h4 class="article-title">{{ item.title }}</h4>
+    <p>{{ item.content }}</p>
+    {% endfor %}
+</div>
+</body>
+</html>
+{% endblock %}
